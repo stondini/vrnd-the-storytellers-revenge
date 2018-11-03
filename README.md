@@ -7,4 +7,5 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 - Developped & tested on iPhone 5s iOS 12.
 
 ## Raw Assets
-- Island videos : Car, Waterfall Side of The Road
+- Arizona : 14 - The Bum on the Road, 18 - Tunel
+- 
