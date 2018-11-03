@@ -360,7 +360,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687500121}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: c0df30436eb884930b71037c8093eee6, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: cf046b41d37ad46178746e2c78120e64, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -370,7 +370,7 @@ VideoPlayer:
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 1
+  m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
