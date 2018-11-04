@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1640
     height: 955
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 89
+  controlID: 66
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1270
     height: 955
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 90
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1270
     height: 684
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 91
+  controlID: 68
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 684
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 891
     height: 684
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 955
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -655,7 +655,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 28ceffffd6ceffff84d0ffff08d9ffffb6d9ffff64dbffffeee5ffff9ae6ffff4ce8ffff60f5ffff0af6ffffb8f7ffffe4fbffff00000000
+    m_ExpandedIDs: cec8ffff78c9ffff22cbfffff4e0ffff9ee1ffff48e3ffffe4fbffff000000000a3000006631000076310000f0320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -705,14 +705,14 @@ MonoBehaviour:
     height: 663
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 535.7763800621033
+  lastFramingTime: 46276.27040100098
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -40.16}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: -40.16}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -740,13 +740,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.32007194, y: -0.0051187254, z: 0.0017290697, w: -0.94738}
+    m_Target: {x: -0.14821535, y: -0.024625672, z: 0.0036957865, w: -0.98864704}
     speed: 2
-    m_Value: {x: -0.32007194, y: -0.0051187254, z: 0.0017290697, w: -0.94738}
+    m_Value: {x: -0.14821456, y: -0.02462554, z: 0.0036957667, w: -0.98864174}
   m_Size:
-    m_Target: 75.71552
+    m_Target: 101.19327
     speed: 2
-    m_Value: 75.71552
+    m_Value: 101.19327
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -793,10 +793,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -221.75
-    m_HBaseRangeMax: 221.75
-    m_VBaseRangeMin: -161.5
-    m_VBaseRangeMax: 161.5
+    m_HBaseRangeMin: -443.5
+    m_HBaseRangeMax: 443.5
+    m_VBaseRangeMin: -323
+    m_VBaseRangeMax: 323
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -816,7 +816,7 @@ MonoBehaviour:
       y: 17
       width: 887
       height: 646
-    m_Scale: {x: 2, y: 2}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 443.5, y: 323}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -824,12 +824,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -221.75
-      y: -161.5
-      width: 443.5
-      height: 323
+      x: -443.5
+      y: -323
+      width: 887
+      height: 646
     m_MinimalGUI: 1
-  m_defaultScale: 2
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1774, y: 1326}
@@ -899,11 +899,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sound
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sound
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/sto/Courses/UdacityVR/vrnd-the-storytellers-revenge/The
     Storytellers Revenge
@@ -911,9 +911,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e2b0000
-    m_LastClickedID: 11054
-    m_ExpandedIDs: 000000002e2b0000162e0000
+    m_SelectedIDs: 962c0000
+    m_LastClickedID: 11414
+    m_ExpandedIDs: 000000002e2b00001e2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -941,7 +941,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e2b0000162e0000
+    m_ExpandedIDs: 000000002e2b00001e2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

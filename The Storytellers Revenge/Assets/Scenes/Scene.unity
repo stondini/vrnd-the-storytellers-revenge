@@ -213,7 +213,7 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &534669904
 Camera:
   m_ObjectHideFlags: 0
@@ -311,6 +311,7 @@ Transform:
   m_Children:
   - {fileID: 2019586502}
   - {fileID: 1566394931}
+  - {fileID: 1721929381}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -407,7 +408,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687500121}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: cf046b41d37ad46178746e2c78120e64, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 417c9daa51c0749e5b5cf5e5ddeed92a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -427,7 +428,7 @@ VideoPlayer:
   m_Url: file:///Users/sto/Courses/UdacityVR/Autopano/The Road Trip/Adobe Premiere/Strange
     Road.mp4
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 01
+  m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -488,7 +489,7 @@ GameObject:
   - component: {fileID: 1566394933}
   - component: {fileID: 1566394932}
   m_Layer: 0
-  m_Name: Car Motor Right
+  m_Name: Birds Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +502,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566394930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -40}
+  m_LocalPosition: {x: 60, y: 0, z: -15}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 574612387}
@@ -526,7 +527,7 @@ MonoBehaviour:
   gainDb: 0
   occlusionEnabled: 0
   playOnAwake: 1
-  sourceClip: {fileID: 8300000, guid: 7890ccd49b5bd4a2695171d027cb8fe7, type: 3}
+  sourceClip: {fileID: 8300000, guid: a89d840ae5ddd442783696e75a270741, type: 3}
   sourceLoop: 1
   sourceMute: 0
   sourcePitch: 1
@@ -582,6 +583,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566394930}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1721929380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721929381}
+  - component: {fileID: 1721929384}
+  - component: {fileID: 1721929383}
+  - component: {fileID: 1721929382}
+  m_Layer: 0
+  m_Name: Traffic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1721929381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721929380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_Children: []
+  m_Father: {fileID: 574612387}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721929382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721929380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbca64e524ea44f9b26142ec59aca8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 1
+  occlusionEnabled: 0
+  playOnAwake: 1
+  sourceClip: {fileID: 8300000, guid: 940b7f2561ebc431c966d7837d489751, type: 3}
+  sourceLoop: 1
+  sourceMute: 0
+  sourcePitch: 1
+  sourcePriority: 128
+  sourceSpatialBlend: 1
+  sourceDopplerLevel: 1
+  sourceSpread: 0
+  sourceVolume: 1
+  sourceRolloffMode: 0
+  sourceMaxDistance: 500
+  sourceMinDistance: 1
+  hrtfEnabled: 1
+  audioSource: {fileID: 0}
+--- !u!23 &1721929383
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721929380}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1721929384
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721929380}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1778704880
 Prefab:
   m_ObjectHideFlags: 0
@@ -636,7 +743,7 @@ GameObject:
   - component: {fileID: 2019586504}
   - component: {fileID: 2019586503}
   m_Layer: 0
-  m_Name: Car Motor Left
+  m_Name: Birds Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +756,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019586501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalPosition: {x: -40, y: 0, z: 15}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 574612387}
@@ -671,10 +778,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 1
   occlusionEnabled: 0
   playOnAwake: 1
-  sourceClip: {fileID: 8300000, guid: 7890ccd49b5bd4a2695171d027cb8fe7, type: 3}
+  sourceClip: {fileID: 8300000, guid: a89d840ae5ddd442783696e75a270741, type: 3}
   sourceLoop: 1
   sourceMute: 0
   sourcePitch: 1
