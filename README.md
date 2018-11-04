@@ -6,6 +6,13 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 - Unity 5.6
 - Developped & tested on iPhone 5s iOS 12.
 
-## Raw Assets
-- Arizona : 14 - The Bum on the Road, 18 - Tunel
-- 
+## Raw Footages
+- 01 - Road
+- 14 - The Bum on the Road
+- 18 - Tunel
+
+## Sounds
+Free sounds from https://freesound.org
+
+## The Story
+A kind of David Lynch's psychological road movie :)
