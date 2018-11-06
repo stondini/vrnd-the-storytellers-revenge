@@ -29,6 +29,13 @@ I removed the sound tracks of the footages and replaced them by some free sounds
 
 The radio channel sound comes from the song "Do It Again" by "The Queens of the Stone Age".
 
+## Edition in Adobe Premiere
+I used several effects :
+- Opacity with Color Dodge for lightnings.
+- VR Rotate Sphere to try to have a smooth transition between clips (same "view angle").
+- Brightness on keyframes at the exit of the tunnel.
+- Distortion of the sound at the exit of the tunnel.
+
 ## 3D Audio Sources
 3 audio sources in the last scene :
 - 1 source with cars
@@ -36,4 +43,5 @@ The radio channel sound comes from the song "Do It Again" by "The Queens of the 
 
 ## Interactions
 - During the movie, the chapters choice buttons are always present. User can jump through chapters.
-- At the end, the same menu allows navigation.
+- At the end of the tunnel, user can choose the end. Either Heaven or Hell.
+- At the end, the choice buttons allow navigation.
