@@ -16,7 +16,7 @@ public class RemoteControl : MonoBehaviour {
 
     private const double CHAP_2_TIME = 35;
 
-    private const double CHAP_3_TIME = 44;
+    private const double CHAP_3_TIME = 44.7;
 
     private const double PATH_1_TIME = 45;
 
@@ -42,24 +42,34 @@ public class RemoteControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+
         videoPlayer = videoSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
         particleSys.SetActive(false);
-        JumpToChapter1();
+        //videoPlayer.url = "https://www.dropbox.com/s/dl/l9agvws26ixzea9/Strange%20Road%20-%20Mobile4K.mp4";
+        //videoPlayer.url = "https://www.dropbox.com/s/dl/chvntnvytzfu7wd/BW_Short.mp4";
+        Debug.Log("URL: " + videoPlayer.url);
+        videoPlayer.playOnAwake = false;
+        videoPlayer.Prepare();
+        Debug.Log("Prepared");
         videoPlayer.Play();
     }
 	
 	void FixedUpdate () {
         double videoTime = videoPlayer.time;
-        if (videoTime > TITLE_TIME) {
+        if ((videoTime > TITLE_TIME) && titlePanel.active) {
+            Debug.Log("Title timeout: " + videoTime);
             titlePanel.SetActive(false);
             actionPanel.SetActive(true);
         }
         if ((videoTime > CHAP_3_TIME) && (videoTime < PATH_1_TIME)) {
+            Debug.Log("Path chose time: " + videoTime);
             videoPlayer.Stop();
             pathSelectionPanel.SetActive(true);
         }
-        if (((videoTime > CREDIT_1_TIME) && (videoTime < PATH_2_TIME)) | (videoTime > CREDIT_2_TIME))
-        {
+        if (((videoTime > CREDIT_1_TIME) && (videoTime < PATH_2_TIME)) | (videoTime > CREDIT_2_TIME)) {
+            Debug.Log("Credit time: " + videoTime);
             videoPlayer.Stop();
             creditPanel.SetActive(true);
             particleSys.SetActive(true);
@@ -80,20 +90,20 @@ public class RemoteControl : MonoBehaviour {
     }
 
     public void JumpToChapter1 () {
-        hellAudioSrc.GetComponent<GvrAudioSource>().Stop();
-        heavenAudioSrc.GetComponent<GvrAudioSource>().Stop();
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
         JumpTo(CHAP_1_TIME, false, true, false, false);
     }
 
     public void JumpToChapter2() {
-        hellAudioSrc.GetComponent<GvrAudioSource>().Stop();
-        heavenAudioSrc.GetComponent<GvrAudioSource>().Stop();
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
         JumpTo(CHAP_2_TIME, false, false, true, false);
     }
 
     public void JumpToChapter3() {
-        hellAudioSrc.GetComponent<GvrAudioSource>().Stop();
-        heavenAudioSrc.GetComponent<GvrAudioSource>().Stop();
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
         JumpTo(CHAP_3_TIME, false, false, true, false);
     }
 
@@ -102,8 +112,8 @@ public class RemoteControl : MonoBehaviour {
         videoPlayer.Prepare();
         videoPlayer.time = PATH_1_TIME;
         videoPlayer.Play();
-        hellAudioSrc.GetComponent<GvrAudioSource>().Stop();
-        heavenAudioSrc.GetComponent<GvrAudioSource>().Play();
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Play();
     }
 
     public void SelectPath2() {
@@ -111,7 +121,7 @@ public class RemoteControl : MonoBehaviour {
         videoPlayer.Prepare();
         videoPlayer.time = PATH_2_TIME;
         videoPlayer.Play();
-        heavenAudioSrc.GetComponent<GvrAudioSource>().Stop();
-        hellAudioSrc.GetComponent<GvrAudioSource>().Play();
+        heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
+        hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Play();
     }
 }
