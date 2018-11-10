@@ -16,7 +16,7 @@ public class RemoteControl : MonoBehaviour {
 
     private const double CHAP_2_TIME = 35;
 
-    private const double CHAP_3_TIME = 44.7;
+    private const double CHAP_3_TIME = 44.6;
 
     private const double PATH_1_TIME = 45;
 
@@ -54,21 +54,22 @@ public class RemoteControl : MonoBehaviour {
         videoPlayer.Prepare();
         Debug.Log("Prepared");
         videoPlayer.Play();
+        JumpToChapter1();
     }
 	
 	void FixedUpdate () {
         double videoTime = videoPlayer.time;
-        if ((videoTime > TITLE_TIME) && titlePanel.active) {
+        if ((videoTime >= TITLE_TIME) && titlePanel.active) {
             Debug.Log("Title timeout: " + videoTime);
             titlePanel.SetActive(false);
             actionPanel.SetActive(true);
         }
-        if ((videoTime > CHAP_3_TIME) && (videoTime < PATH_1_TIME)) {
+        if ((videoTime >= CHAP_3_TIME) && (videoTime < PATH_1_TIME)) {
             Debug.Log("Path chose time: " + videoTime);
             videoPlayer.Stop();
             pathSelectionPanel.SetActive(true);
         }
-        if (((videoTime > CREDIT_1_TIME) && (videoTime < PATH_2_TIME)) | (videoTime > CREDIT_2_TIME)) {
+        if (((videoTime >= CREDIT_1_TIME) && (videoTime < PATH_2_TIME)) | (videoTime > CREDIT_2_TIME)) {
             Debug.Log("Credit time: " + videoTime);
             videoPlayer.Stop();
             creditPanel.SetActive(true);
@@ -82,11 +83,17 @@ public class RemoteControl : MonoBehaviour {
         pathSelectionPanel.SetActive(false);
         actionPanel.SetActive(showActions);
         creditPanel.SetActive(showCredit);
-        if (!videoPlayer.isPlaying) {
+        if (!videoPlayer.isPlaying)
+        {
             videoPlayer.Prepare();
             videoPlayer.Play();
         }
-        videoPlayer.time = time;
+        else
+        {
+            videoPlayer.Pause();
+            videoPlayer.time = time;
+            videoPlayer.Play();
+        }
     }
 
     public void JumpToChapter1 () {
@@ -109,7 +116,7 @@ public class RemoteControl : MonoBehaviour {
 
     public void SelectPath1() {
         pathSelectionPanel.SetActive(false);
-        videoPlayer.Prepare();
+        videoPlayer.Pause();
         videoPlayer.time = PATH_1_TIME;
         videoPlayer.Play();
         hellAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();
@@ -118,7 +125,7 @@ public class RemoteControl : MonoBehaviour {
 
     public void SelectPath2() {
         pathSelectionPanel.SetActive(false);
-        videoPlayer.Prepare();
+        videoPlayer.Pause();
         videoPlayer.time = PATH_2_TIME;
         videoPlayer.Play();
         heavenAudioSrc.GetComponent<ResonanceAudioSource>().audioSource.Stop();

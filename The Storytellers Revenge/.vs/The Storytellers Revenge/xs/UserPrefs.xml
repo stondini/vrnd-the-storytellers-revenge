@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RemoteControl.cs">
     <Files>
-      <File FileName="Assets/FlipNormals.shader" Line="43" Column="46" />
-      <File FileName="Assets/Scripts/RemoteControl.cs" Line="112" Column="40" />
+      <File FileName="Assets/Scripts/RemoteControl.cs" Line="57" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -15,7 +15,7 @@ The last lightning teleports him into a colored tunnel, the radio becomes crazy 
 At the end of the tunnel, he is again teleported aside of the road, without his car, no radio, no storm, no lightning. Just birds singing or something else...
 What a Strange Road !
 
-Dropbox video link :
+Dropbox video link : https://www.dropbox.com/s/nw448jkqpj91mat/Strange%20Road%20-%20Medium_Bitrate.mp4?dl=1
 
 ## Raw Footages
 - 01 - Road
@@ -47,3 +47,8 @@ I used several effects :
 - During the movie, the chapters choice buttons are always present. User can jump through chapters.
 - At the end of the tunnel, user can choose the end. Either Heaven or Hell.
 - At the end, the choice buttons allow navigation.
+
+## Test
+Playing video using Dropbox URL is very slow. In Unity and on the device.
+I tried using fast Wifi and mobile 4G network and de performance was not good.
+Maybe the cause is my "old" iPhone 5s.
